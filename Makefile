@@ -1,7 +1,7 @@
 .PHONY: proto clean build run test
 
 # Go related variables
-BINARY_NAME=go-api-grpc-demo.exe
+BINARY_NAME=go-api-grpc-demo
 MAIN_FILE=main.go
 
 # Proto related variables
@@ -28,7 +28,7 @@ proto:
 
 # Run the application
 run: build
-	.\$(BINARY_NAME)
+	./$(BINARY_NAME)
 
 # Run tests
 test:
